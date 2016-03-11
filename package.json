@@ -1,7 +1,9 @@
 {
   "name": "supertest-helper",
   "version": "0.0.1",
+  "main": "supertest-helper.js",
   "dependencies": {
-    "pick-structure": "0.0.4"
+    "chai": "^3.0.0",
+    "pick-structure": "^0.0.4"
   }
 }
