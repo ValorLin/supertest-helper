@@ -1,5 +1,6 @@
 {
   "name": "supertest-helper",
+  "description": "A helper for supertest",
   "version": "0.0.1",
   "main": "supertest-helper.js",
   "dependencies": {
