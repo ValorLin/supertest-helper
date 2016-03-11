@@ -10,7 +10,7 @@ describe('supertest-helper', function () {
     });
     it('like', function (done) {
         request(app)
-           .get('/api/')
+           .get('/api/something')
            // match response like {"code": 1}
            // e.g. {"code": 1, msg: "success"} would pass test
            .expect(supertestHelper.like({
