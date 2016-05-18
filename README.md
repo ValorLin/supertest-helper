@@ -18,7 +18,6 @@ describe('supertest-helper', function () {
         app = require('path/to/your/app');
     });
     it('with supertest-helper', function (done) {
-        // with supertest-helper
         request(app)
            .get('/api/something')
            // {"code": 1, msg: "success"} would pass,
