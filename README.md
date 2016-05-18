@@ -21,8 +21,8 @@ describe('supertest-helper', function () {
         // with supertest-helper
         request(app)
            .get('/api/something')
-           // e.g. {"code": 1, msg: "success"} would pass test,
-           // and  {"code": 1, msg: "ok"} also pass test.
+           // {"code": 1, msg: "success"} would pass,
+           // and  {"code": 1, msg: "ok"} also pass.
            .expect(supertestHelper.like({
                 "code": 1
             })).end(done);
@@ -31,16 +31,16 @@ describe('supertest-helper', function () {
     it('without supertest-helper', function(done) {
         request(app)
            .get('/api/something')
-           // e.g. {"code": 1, msg: "success"} would failed,
-           // and  {"code": 1, msg: "ok"} failed either.
+           // {"code": 1, msg: "success"} would fail,
+           // and  {"code": 1, msg: "ok"} fail either.
            .expect({
                 "code": 1
             }).end(done);
             
         request(app)
            .get('/api/something')
-           // e.g. {"code": 1, msg: "success"} would pass test,
-           // but  {"code": 1, msg: "ok"} would be failed.
+           // {"code": 1, msg: "success"} would pass,
+           // but  {"code": 1, msg: "ok"} would fail.
            .expect({
                 "code": 1,
                 "msg" : 'success'
