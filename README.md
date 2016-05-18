@@ -1,7 +1,7 @@
 # Supertest Helper
 A helper for supertest.
 
-I created this because sometimes we don't want to compare objects strictly. Because sometimes the response would contains something like `timestamp` or `random value`, and we don't need to check them.
+I created this because sometimes we don't want to compare objects strictly. Sometimes the response would contains something like `timestamp` or `random value`, and we don't need to check them.
 
 ## Install
 ```bash
