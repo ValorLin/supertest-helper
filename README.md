@@ -1,4 +1,8 @@
 # Supertest Helper
+## Install
+```bash
+npm i -D supertest-helper
+```
 ## Exmaple
 ```js
 var request = require('supertest');
